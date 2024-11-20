@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.HomeScreen"
+        tools:targetApi="31">
+        <activity
+            android:name=".appointmentsRV.AppointmentPageActivity"
+            android:theme="@style/Theme.MaterialComponents.DayNight.DarkActionBar"
+            android:exported="false" />
+        <activity
+            android:name=".Authentication.Forgetpassword"
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.Light" />
+        <activity
+            android:name=".Authentication.Login"
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.Light" />
+        <activity
+            android:name=".Authentication.SignUp"
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat.Light" />
+        <activity
+            android:name=".AIActivity"
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.Light" />
+        <activity
+            android:name=".SplashScreen"
+            android:exported="true"
+            android:theme="@style/SplashScreenTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ProfileActivity"
+            android:theme="@style/Theme.MaterialComponents.Light.DarkActionBar" />
+
+        <activity
+            android:name=".ProgressActivity"
+            android:theme="@style/Theme.MaterialComponents.Light.DarkActionBar" />
+        <activity
+            android:name=".Test.TestMainActivity"
+            android:theme="@style/SplashScreenTheme" />
+        <activity
+            android:name=".Test.TestInstructions"
+            android:theme="@style/SplashScreenTheme" />
+        <activity
+            android:name=".NotificationsActivity"
+            android:theme="@style/Theme.MaterialComponents.Light.DarkActionBar" />
+        <activity
+            android:name=".doctorsRV.MainActivityDoctors"
+            android:theme="@style/Theme.MaterialComponents.Light.DarkActionBar" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.MaterialComponents.Light.DarkActionBar" /> <!-- Add the missing activity declaration for PastResultsActivity -->
+        <activity
+            android:name=".PastResultsActivity"
+            android:theme="@style/Theme.MaterialComponents.Light.DarkActionBar" />
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-3940256099942544~3347511713" />
+    </application>
+
+</manifest>

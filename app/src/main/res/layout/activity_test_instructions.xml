@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Text for instructions -->
+    <TextView
+        android:id="@+id/instructionsText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Please follow the instructions for the test below."
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:layout_marginBottom="24dp"/>
+
+    <!-- Image to display instructions -->
+    <ImageView
+        android:id="@+id/instructionsImage"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:src="@drawable/test"
+        android:contentDescription="Test instructions image"
+        android:layout_marginBottom="24dp"
+        android:scaleType="centerCrop" />
+
+    <!-- TextView to display the score -->
+    <TextView
+        android:id="@+id/scoreTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Your Score: 0"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:layout_marginBottom="24dp"/>
+
+    <!-- Button to start the test -->
+    <Button
+        android:id="@+id/btnTest"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Start Test"
+        android:textSize="16sp" />
+</LinearLayout>

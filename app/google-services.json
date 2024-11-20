@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "366281050691",
+    "project_id": "home-screen-22189",
+    "storage_bucket": "home-screen-22189.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:366281050691:android:508db67d563866108fe2f6",
+        "android_client_info": {
+          "package_name": "com.example.homescreen"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAtf-nrm_VqQTALZ_5zGNc74eBBKTUZScU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

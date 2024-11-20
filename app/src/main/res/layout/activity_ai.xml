@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <EditText
+        android:layout_width="320dp"
+        android:layout_height="75dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="21dp"
+        android:backgroundTint="#040202"
+        android:layout_marginLeft="21dp"
+
+        android:hint="Enter your query please"
+        android:textColorHint="#000"
+        android:id="@+id/edittext"
+
+        />
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_toRightOf="@+id/edittext"
+        android:layout_alignParentBottom="true"
+        android:backgroundTint="#89CBEC"
+        android:src="@drawable/baseline_send_24"
+        android:layout_marginBottom="21dp"
+        android:id="@+id/send"
+        app:maxImageSize="41dp"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:backgroundTint="#89CBEC"
+        android:background="#fff"
+        android:layout_marginTop="11dp"
+        android:id="@+id/backmove"
+        android:layout_marginLeft="11dp"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/backmove"
+        android:layout_above="@+id/edittext">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/backmove"
+            android:layout_above="@+id/edittext"
+            android:layout_marginBottom="21dp"
+            android:layout_marginTop="21dp"
+            android:layout_marginLeft="11dp"
+            android:layout_marginRight="11dp"
+            android:hint="Your Answer.."
+            android:textColorHint="#3E2828"
+            android:background="#B6F3EC"
+            android:id="@+id/textview_name"
+            android:textSize="22dp"/>
+
+    </ScrollView>
+
+
+</RelativeLayout>
